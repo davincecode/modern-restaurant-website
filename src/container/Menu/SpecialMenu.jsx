@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { SubHeading, MenuItem } from '../../components';
 import { data, images } from '../../constants';
 import './SpecialMenu.css';
 
-const SpecialMenu = () => (
+const SpecialMenu = () => {
+
+  useEffect(() => {
+    console.log("DATA AVAILABLE", data, images);
+  }
+  , [])
+
+    return (
   <div className="app__specialMenu flex__center section__padding" id="menu">
     <div className="app__specialMenu-title">
       <SubHeading title="Menu that fits your palatte" />
@@ -30,7 +37,7 @@ const SpecialMenu = () => (
         <div className="app__specialMenu_menu_items">
           {data.cocktails.map((cocktail, index) => (
             <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
-          ))}
+            ))}
         </div>
       </div>
     </div>
@@ -38,7 +45,8 @@ const SpecialMenu = () => (
     <div style={{ marginTop: 15 }}>
       <button type="button" className="custom__button">View More</button>
     </div>
-  </div>
-);
+      </div>
+    );
+};
 
 export default SpecialMenu;
