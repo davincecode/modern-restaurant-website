@@ -56,14 +56,11 @@
   flex-direction: column;
 }
 
-.image-chef {
-  width: 50%;
-}
-
 .app__wrapper_img-reverse {
   display: flex;
   justify-content: flex-end;
   padding-right: 5rem;
+  width: 50%;
 }
 
 .app__wrapper_img img {
@@ -178,6 +175,17 @@
   .p__opensans {
     font-size: 14px;
   }
+
+  .app__wrapper_img-reverse {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  .app__wrapper_img img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -193,4 +201,16 @@
     font-size: 45px;
     line-height: 70px;
   }
+
+  .app__wrapper_img-reverse {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  .app__wrapper_img img {
+    width: 100%;
+  }
+
 }
