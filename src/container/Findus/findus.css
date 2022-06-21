@@ -1,0 +1,25 @@
+.app__wrapper-findus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.app__wrapper_findus-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.app__wrapper_img-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__wrapper_img-left img {
+  width: 50%;
+}
+
