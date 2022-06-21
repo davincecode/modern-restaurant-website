@@ -122,7 +122,7 @@
   .p__Playfair {
     font-size: 37px;
     line-height: 67px;
-    width: 60%;
+    width: auto;
   }
 
   .p__opensans {
@@ -154,7 +154,7 @@
   }
 
   .app__wrapper_img img {
-    width: 100%;
+    width: 50%;
   }
 }
 
