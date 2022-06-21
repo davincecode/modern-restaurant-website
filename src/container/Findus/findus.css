@@ -23,3 +23,16 @@
   width: 50%;
 }
 
+@media screen and (max-width: 650px) {
+  .app__wrapper_img-left img {
+    margin: 5rem 0;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .app__wrapper_img-left img {
+    width: 100%;
+  }
+}
