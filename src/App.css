@@ -1,4 +1,5 @@
 .section__padding {
+  position: relative;
   padding: 4rem 6rem;
 }
 
@@ -13,7 +14,18 @@
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
+}
+
+.app__hero-bg {
+  background: linear-gradient(112deg, rgba(18,18,18,1) 10%, rgba(198,35,104,0) 90%), url('./assets/hero.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
   background-attachment: fixed;
+  margin-top: -80px;
+  height: 100vh;
+
+  z-index: -1;
 }
 
 .app__wrapper {
@@ -27,20 +39,21 @@
 .app__wrapper_info {
   flex: 1;
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-}
 
-.app__wrapper_img {
-  flex: 1;
+  z-index: 1;
+}
+.app__wrapper_hero-info {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  margin-left: 2rem;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .app__wrapper_img-reverse {
@@ -67,7 +80,7 @@
     cursor: pointer;
 }
 
-.p__cormorant {
+.p__Playfair {
   font-family: var(--font-base);
   color: var(--color-white);
   font-weight: 700;
@@ -85,10 +98,10 @@
   letter-spacing: 0.04em;
   text-transform: capitalize;
   line-height: 28px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.headtext__cormorant {
+.headtext__Playfair {
   font-family: var(--font-base);
   color: var(--color-golden);
   font-size: 64px;
@@ -103,9 +116,10 @@
 
 @media screen and (min-width: 2000px) {
   .custom__button,
-  .p__cormorant {
+  .p__Playfair {
     font-size: 37px;
     line-height: 67px;
+    width: 60%;
   }
 
   .p__opensans {
@@ -113,7 +127,7 @@
     line-height: 50px;
   }
 
-  .headtext__cormorant {
+  .headtext__Playfair {
     font-size: 150px;
     line-height: 210px;
   }
@@ -152,7 +166,7 @@
     padding: 4rem 2rem;
   }
   
-  .p__cormorant {
+  .p__Playfair {
     font-size: 21px;
   }
 
@@ -166,11 +180,11 @@
     font-size: 12px;
   }
 
-  .p__cormorant {
+  .p__Playfair {
     font-size: 19px;
   }
 
-  .headtext__cormorant {
+  .headtext__Playfair {
     font-size: 45px;
     line-height: 70px;
   }
